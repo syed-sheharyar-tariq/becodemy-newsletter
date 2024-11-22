@@ -9,6 +9,9 @@ export default {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      clashDisplay: ["var(--font-clashDisplay)"]
+    },
     extend: {
       colors: {
         background: "var(--background)",
