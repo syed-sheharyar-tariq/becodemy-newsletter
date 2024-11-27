@@ -1,4 +1,4 @@
-function Logo() {
+export default function Logo() {
   return (
     <div className="relative flex items-center">
     <svg
@@ -49,5 +49,3 @@ function Logo() {
   </div>
   )
 }
-
-export default Logo

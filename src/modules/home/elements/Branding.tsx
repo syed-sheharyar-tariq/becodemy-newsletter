@@ -6,7 +6,7 @@ export default function Branding() {
   return (
     <div className="border-b border-t border-[#000] py-10">
       <h3 className="uppercase text-xl md:text-2xl text-center maz-w-3xl mx-auto font-[400] z-20 relative">
-        CREATED BY EARLY WORKINK BREW TEAM
+        CREATED BY EARLY WORKINK SHEHARYAR TEAM
       </h3>
       <div className="w-full text-center pt-1">
         <h3 className="uppercase bg-[#F091DD] rounded p-2 text-xl md:text-2xl text-center inline-block font-medium">

@@ -39,7 +39,7 @@ export default function Banner() {
             <Button color="primary" className="text-xl !p-8">Get Started</Button>
           </div>
           <br/>
-          <h5 className="text-center text-lg">Start a 30day Free Trial</h5>
+          <h5 className="text-center text-lg md:mb-20">Start a 30day Free Trial</h5>
         </div>
       </div>
     </div>
