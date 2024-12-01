@@ -1,11 +1,7 @@
 import Home from "@/modules/home/home"
 
 function Page() {
-  return (
-    <>
-      <Home />
-    </>
-  )
+  return <Home />
 }
 
 export default Page

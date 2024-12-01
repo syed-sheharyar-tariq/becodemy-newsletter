@@ -18,6 +18,8 @@ import { CgProfile } from "react-icons/cg"
 import { FiPlusCircle } from "react-icons/fi"
 import { MdDeleteOutline } from "react-icons/md"
 import { IoIosRepeat } from "react-icons/io"
+import { GrResources } from "react-icons/gr"
+import { IoMdHelp } from "react-icons/io"
 
 export const ICONS = {
   right: <IoMdCheckmark />,
@@ -40,4 +42,6 @@ export const ICONS = {
   plus: <FiPlusCircle />,
   delete: <MdDeleteOutline />,
   regenerate: <IoIosRepeat />,
+  resources: <GrResources/>,
+  help: <IoMdHelp/>
 }

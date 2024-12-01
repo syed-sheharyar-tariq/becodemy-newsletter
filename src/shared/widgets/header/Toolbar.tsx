@@ -2,7 +2,9 @@
 import { Button } from "@nextui-org/react"
 import Link from "next/link"
 import Image from "next/image"
-import { useUser } from "@clerk/nextjs"
+import { useUser,
+  //  UserButton
+   } from "@clerk/nextjs"
 
 export default function Toolbar() {
   const { user } = useUser()
@@ -24,6 +26,7 @@ export default function Toolbar() {
               className="rounded-full"
             />
           </Link>
+          {/* <UserButton/> */}
         </>
       ) : (
           <Link href={"/sign-in"}>Login</Link>
