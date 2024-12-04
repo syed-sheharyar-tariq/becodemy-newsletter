@@ -9,6 +9,7 @@ import {
   // SignedOut,
   // UserButton
 } from "@clerk/nextjs"
+import { Toaster } from "sonner"
 
 const clashDisplay = localFont({
   src: "../assets/fonts/ClashDisplay-Variable.ttf",
@@ -32,6 +33,10 @@ export default function RootLayout({
         lang="en"
         suppressHydrationWarning>
         <body className={`${clashDisplay.variable} antialiased`}>
+          <Toaster
+            richColors
+            position="top-center"
+          />
           <Providers>{children}</Providers>
         </body>
       </html>
