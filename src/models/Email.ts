@@ -1,21 +1,24 @@
-import mongoose from "mongoose"
+import mongoose, { Schema, Model } from "mongoose"
 
-const { Schema } = mongoose
-
-const emailSchema = new Schema(
+const emailSchema = new Schema<EmailSchema, Model<EmailSchema>>(
   {
     title: {
       type: String,
+      required: true,
     },
     content: {
       type: String,
+      required: true,
     },
     newsletterOwnerId: {
       type: String,
+      required: true,
     },
   },
   { timestamps: true }
 )
 
-const Email = mongoose.models.Emails || mongoose.model("Emails", emailSchema)
-export default Email
+const Emails: Model<EmailSchema> =
+  mongoose.models.Emails || mongoose.model<EmailSchema>("Emails", emailSchema)
+
+export default Emails

@@ -1,6 +1,6 @@
 "use server"
 
-import Email from "@/models/Email"
+import Emails from "@/models/Email"
 import { connectDB } from "@/shared/libs/db"
 
 export const getEmails = async ({
@@ -10,7 +10,7 @@ export const getEmails = async ({
 }) => {
   try {
     await connectDB()
-    const emails = await Email.find({
+    const emails = await Emails.find({
       newsletterOwnerId,
     })
     return JSON.parse(JSON.stringify(emails))

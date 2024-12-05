@@ -1,7 +1,7 @@
 "use server"
 
 import { connectDB } from "@/shared/libs/db"
-import Email from "@/models/Email"
+import Emails from "@/models/Email"
 
 export const GetEmailDetails = async ({
   title,
@@ -12,7 +12,7 @@ export const GetEmailDetails = async ({
 }) => {
   try {
     await connectDB()
-    const email = await Email.findOne({
+    const email = await Emails.findOne({
       title,
       newsletterOwnerId,
     })

@@ -6,8 +6,11 @@ export const connectDB = async () => {
       await mongoose.disconnect()
     }
 
+    if (!process.env.DB_CONNECTION_STRING) {
+      throw Error("Missing DB Connection String")
+    }
     await mongoose
-      .connect(process.env.DB_CONNECTION_STRING!)
+      .connect(process.env.DB_CONNECTION_STRING)
       .then(() => {
         console.log("Connected to DB")
       })

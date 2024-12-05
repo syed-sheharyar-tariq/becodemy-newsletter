@@ -1,6 +1,6 @@
 "use server"
 
-import Email from "@/models/Email"
+import Emails from "@/models/Email"
 import { connectDB } from "@/shared/libs/db"
 
 export const saveEmail = async ({
@@ -14,18 +14,18 @@ export const saveEmail = async ({
 }) => {
   try {
     await connectDB()
-    const email = await Email.findOne({
+    const email = await Emails.findOne({
       title,
       newsletterOwnerId,
     })
 
     if (email) {
-      await Email.findByIdAndUpdate(email._id, {
+      await Emails.findByIdAndUpdate(email._id, {
         content,
       })
       return { message: "Email updated successfully!" }
     } else {
-      await Email.create({
+      await Emails.create({
         title,
         content,
         newsletterOwnerId,
