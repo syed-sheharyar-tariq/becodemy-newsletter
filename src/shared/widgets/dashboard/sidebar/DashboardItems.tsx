@@ -1,6 +1,6 @@
 import { sideBarBottomItems, sideBarItems } from "@/app/configs/constants"
 import useRouteChange from "@/shared/hooks/useRouteChange"
-import { ICONS } from "@/shared/utils/icons"
+import { ICONS } from "@/shared/utils/Icons"
 import { useClerk } from "@clerk/nextjs"
 import Link from "next/link"
 import { redirect, usePathname } from "next/navigation"

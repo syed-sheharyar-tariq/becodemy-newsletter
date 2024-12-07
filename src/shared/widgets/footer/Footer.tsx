@@ -30,14 +30,14 @@ export default function Footer() {
           </p>
         </div>
         <div className="w-full md:w-[60%] flex md:justify-end justify-center py-5 md:py-0">
-          <div className="md:w-[50%] flex justify-around">
+          <div className="w-full md:w-[50%] flex justify-around">
             <div>
               <ul>
                 <li className="text-xl pb-4 cursor-pointer">Create</li>
                 <li className="text-xl pb-4 cursor-pointer">Write</li>
                 <li className="text-xl pb-4 cursor-pointer">Grow</li>
-                <li className="text-xl pb-4 cursor-pointer">Monitize</li>
-                <li className="text-xl pb-4 cursor-pointer">Analayze</li>
+                <li className="text-xl pb-4 cursor-pointer">Monetize</li>
+                <li className="text-xl pb-4 cursor-pointer">Analyze</li>
               </ul>
             </div>
 

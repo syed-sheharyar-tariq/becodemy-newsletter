@@ -1,6 +1,6 @@
 "use client"
 import { getEmails } from "@/actions/GetEmails"
-import { ICONS } from "@/shared/utils/icons"
+import { ICONS } from "@/shared/utils/Icons"
 import { useClerk } from "@clerk/nextjs"
 import { Button } from "@nextui-org/react"
 import Link from "next/link"

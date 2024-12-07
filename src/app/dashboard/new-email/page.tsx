@@ -1,6 +1,6 @@
 "use client"
 import dynamic from "next/dynamic"
-import { ICONS } from "@/shared/utils/icons"
+import { ICONS } from "@/shared/utils/Icons"
 import Link from "next/link"
 import { useSearchParams } from "next/navigation"
 const Emaileditor = dynamic(

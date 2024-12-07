@@ -1,4 +1,4 @@
-import { ICONS } from "@/shared/utils/icons"
+import { ICONS } from "@/shared/utils/Icons"
 import { Button } from "@nextui-org/react"
 import Link from "next/link"
 import { useState } from "react"

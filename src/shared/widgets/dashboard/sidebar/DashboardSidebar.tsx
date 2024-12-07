@@ -1,5 +1,5 @@
 "use client"
-import { ICONS } from "@/shared/utils/icons"
+import { ICONS } from "@/shared/utils/Icons"
 import { useUser } from "@clerk/nextjs"
 import DashboardItems from "./DashboardItems"
 import UserPlan from "./UserPlan"
@@ -15,7 +15,7 @@ export default function DashboardSidebar() {
       <div>
         <DashboardItems />
         <UserPlan />
-        <DashboardItems bottomContent={true}/>
+        <DashboardItems bottomContent={true} />
       </div>
     </div>
   )

@@ -1,5 +1,5 @@
-import { ICONS } from "@/shared/utils/icons";
-import { atom } from "jotai";
+import { ICONS } from "@/shared/utils/Icons"
+import { atom } from "jotai"
 
 export const navItems: NavItems[] = [
   {
@@ -14,7 +14,7 @@ export const navItems: NavItems[] = [
   {
     title: "Docs",
   },
-];
+]
 
 export const partners: PartnersTypes[] = [
   {
@@ -32,7 +32,7 @@ export const partners: PartnersTypes[] = [
   {
     url: "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,onerror=redirect,format=auto,width=1080,quality=75/www/company-logos-cyber-ink-bg/CompanyLogosCyberInkBG/awa.svg",
   },
-];
+]
 
 export const freePlan: PlanType[] = [
   {
@@ -47,7 +47,7 @@ export const freePlan: PlanType[] = [
   {
     title: "Newsletter analytics",
   },
-];
+]
 
 export const GrowPlan: PlanType[] = [
   {
@@ -62,7 +62,7 @@ export const GrowPlan: PlanType[] = [
   {
     title: "Newsletter community",
   },
-];
+]
 
 export const scalePlan: PlanType[] = [
   {
@@ -80,15 +80,15 @@ export const scalePlan: PlanType[] = [
   {
     title: "Ad Network",
   },
-];
+]
 
-export const sideBarActiveItem = atom<string>("/dashboard");
+export const sideBarActiveItem = atom<string>("/dashboard")
 
-export const reportFilterActiveItem = atom<string>("Overview");
+export const reportFilterActiveItem = atom<string>("Overview")
 
-export const emailEditorDefaultValue = atom<string>("");
+export const emailEditorDefaultValue = atom<string>("")
 
-export const settingsActiveItem = atom<string>("Profile");
+export const settingsActiveItem = atom<string>("Profile")
 
 export const sideBarItems: DashboardSideBarTypes[] = [
   {
@@ -111,7 +111,7 @@ export const sideBarItems: DashboardSideBarTypes[] = [
     url: "/dashboard/audience",
     icon: ICONS.audience,
   },
-];
+]
 
 export const sideBarBottomItems: DashboardSideBarTypes[] = [
   {
@@ -124,7 +124,7 @@ export const sideBarBottomItems: DashboardSideBarTypes[] = [
     url: "/",
     icon: ICONS.world,
   },
-];
+]
 
 export const subscribersData: subscribersDataTypes[] = [
   {
@@ -141,4 +141,4 @@ export const subscribersData: subscribersDataTypes[] = [
     source: "External website",
     status: "subscribed",
   },
-];
+]

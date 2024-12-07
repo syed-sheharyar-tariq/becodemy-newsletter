@@ -1,4 +1,4 @@
-import { ICONS } from "@/shared/utils/icons"
+import { ICONS } from "@/shared/utils/Icons"
 import { Slider } from "@nextui-org/react"
 
 export default function UserPlan() {

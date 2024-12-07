@@ -1,6 +1,11 @@
-import Resources from "@/modules/dashboard/elements/Resources";
-import { ICONS } from "@/shared/utils/icons";
-import { Button, Popover, PopoverContent, PopoverTrigger } from "@nextui-org/react";
+import Resources from "@/modules/dashboard/elements/Resources"
+import { ICONS } from "@/shared/utils/Icons"
+import {
+  Button,
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@nextui-org/react"
 
 export default function FloatingToolbar() {
   return (
