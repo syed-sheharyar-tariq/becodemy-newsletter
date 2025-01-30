@@ -11,10 +11,12 @@
   "dependencies": {
     "@clerk/nextjs": "^6.5.1",
     "@nextui-org/react": "^2.6.3",
+    "aws-sdk": "^2.1692.0",
     "jotai": "^2.10.2",
     "mongoose": "^8.8.3",
     "motion": "12.0.0-alpha.2",
     "next": "15.0.3",
+    "nodemailer": "^6.10.0",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
     "react-email-editor": "^1.7.11",
@@ -25,13 +27,14 @@
     "timeago.js": "^4.0.2"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.17",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.3"
+    "typescript": "^5"
   }
 }

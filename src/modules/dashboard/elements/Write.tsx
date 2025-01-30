@@ -1,4 +1,5 @@
 "use client"
+import { deleteEmail } from "@/actions/DeleteEmail"
 import { getEmails } from "@/actions/GetEmails"
 import { ICONS } from "@/shared/utils/Icons"
 import { useClerk } from "@clerk/nextjs"
@@ -41,10 +42,10 @@ export default function Write() {
       })
   }
 
-  const deleteEmail = async (id: string) => {
-    // await deleteEmail({ emailId: id }).then((res) => {
-    //   FindEmails()
-    // })
+  const DeleteEmail = async (id: string) => {
+    await deleteEmail({ emailId: id }).then(() => {
+      FindEmails()
+    })
   }
   return (
     <div className="w-full flex p-5 flex-wrap gap-6 relative">
@@ -66,8 +67,8 @@ export default function Write() {
               key={i?._id}
               className="w-[200px] h-[200px] z-[0] relative bg-slate-50 flex flex-col items-center justify-center rounded border cursor-pointer">
               <span
-                className="absolute block z-20 right-2 top-2 text-2xl cursor-pointer"
-                onClick={() => deleteEmail(i?._id)}>
+                className="absolute block z-20 right-2 top-2 text-2xl cursor-pointer hover:text-red-600"
+                onClick={() => DeleteEmail(i?._id)}>
                 {ICONS.delete}
               </span>
               <Link

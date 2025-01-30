@@ -8,6 +8,7 @@ import { Button } from "@nextui-org/react"
 import { toast } from "sonner"
 import { saveEmail } from "@/actions/SaveEmail"
 import { GetEmailDetails } from "@/actions/GetEmailDetails"
+import { sendEmail } from "@/shared/utils/EmailSender"
 
 export default function Emaileditor({
   subjectTitle,
@@ -31,6 +32,15 @@ export default function Emaileditor({
     unlayer?.exportHtml(async (data) => {
       const { design, html } = data
       setJsonData(design)
+      
+      await sendEmail({
+        userEmail: ["syedsheharyartariq146@gmail.com"],
+        subject: subjectTitle,
+        content: html,
+      }).then(() => {
+        toast.success("Email Sent Successfully!")
+        history.push("/dashboard/write")
+      })
     })
   }
 
